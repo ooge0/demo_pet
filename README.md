@@ -48,8 +48,8 @@ By default, after command execution you will have .virtual.env folder in the roo
 3. Check that you have ‘behave’ module: ```behave –version```
 4. Check the list of available tests in the ‘feature’ folder. The have `.feature` extension.
 
-EXAMPLE : `behave -k --tags @this_test`
-where `@this_test` is a tag name for the executed test. Each feature file has different tests and
+EXAMPLE : `behave -k --tags @test`
+where `@test` is a tag name for the executed test. Each feature file has different tests and
 related tags.
 
 ###PyCharm test execution
@@ -61,5 +61,5 @@ Be sure that you have related folder in .virtualenvs
 This manual is for PyCharm IDE.
 Create/Update configuration according to available tags in the tests:
 2. All commands related to the test execution should be run in the ‘feature’ folder.
-Common command for executing test is ```behave -k --tags @profile_matching_dev```
+Common command for executing test is ```behave -k --tags @test```
 3. When all tests will executed you can check ‘reports’ folder. It should contain ‘pet_logger.log’ with detailed information about each action.
